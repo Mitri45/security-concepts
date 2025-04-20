@@ -1,0 +1,18 @@
+# TODO
+
+- [x] Scaffold Vite project and install three.js
+- [x] Set up basic layout with sidebar and content area
+- [x] Implement CSS styling for dark/light modes
+- [x] Populate concept list dynamically from data
+- [x] Initialize basic three.js scene with rotating cube
+- [x] Auto-select the first concept on page load
+- [x] Develop the interactive demo for **XSS (Cross-Site Scripting)**
+- [x] Create charts/diagrams for key concepts using Chart.js or D3.js
+- [x] Enhance three.js visualization to reflect selected security concept
+- [x] Add responsive design and refine UI/UX animations
+- [x] Write tests for list rendering and concept selection
+- [x] Expand interactive demos for remaining concepts (SQL Injection, Brute Force, Rate Limiting added)
+- [ ] Optimize performance and finalize deployment setup
+
+<!-- Next: Auto-select first concept on load -->
+<!-- Next: Expand interactive demos for remaining concepts -->

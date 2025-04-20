@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundamental Security Concepts</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>Fundamental Security Concepts</h1>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">☰</button>
+      </header>
+      <main>
+        <aside id="concept-list">
+          <h2>Concepts</h2>
+          <nav>
+            <ul>
+              <!-- Concept list will be populated by JS -->
+            </ul>
+          </nav>
+        </aside>
+        <section id="concept-details">
+          <h2 id="concept-title">Select a concept</h2>
+          <p id="concept-description">Choose a concept from the list to learn more.</p>
+          <div id="interactive-area">
+            <!-- Interactive elements/visualizations go here -->
+          </div>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
