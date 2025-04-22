@@ -1,49 +1,51 @@
 <!doctype html>
 <html lang="en" class="dark">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fundamental Security Concepts</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen font-sans">
-    <div id="app" class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col min-h-screen">
-      <header class="mb-8 relative flex items-center justify-between py-4 shrink-0">
-        <h1 class="text-3xl sm:text-4xl font-bold text-blue-600 dark:text-blue-400">Fundamental Security Concepts</h1>
-        <button id="menu-toggle" class="menu-toggle md:hidden p-2 rounded-md text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-label="Toggle menu">
-          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-          </svg>
-        </button>
-      </header>
-      <main class="grid grid-cols-1 md:grid-cols-5 gap-8 flex-grow">
-        <aside id="concept-list" 
-               class="md:col-span-1 bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md 
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fundamental Security Concepts</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen font-sans">
+  <div id="app" class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col min-h-screen">
+    <header class="mb-8 relative flex items-center justify-between py-4 shrink-0">
+      <h1 class="text-3xl sm:text-4xl font-bold text-blue-600 dark:text-blue-400">Fundamental Security Concepts</h1>
+      <button id="menu-toggle" class="menu-toggle md:hidden p-2 rounded-md text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-label="Toggle menu">
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </header>
+    <main class="grid grid-cols-1 md:grid-cols-5 gap-8 flex-grow">
+      <aside id="concept-list" class="md:col-span-1 bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md 
                       md:sticky md:top-24 md:h-[calc(100vh-7rem)] md:overflow-y-auto 
                       fixed inset-y-0 left-0 z-30 w-64 overflow-y-auto 
                       transition-transform duration-300 ease-in-out transform -translate-x-full 
                       md:translate-x-0 md:z-auto md:w-auto md:block hidden">
-          <h2 class="text-xl font-semibold mb-4 border-b pb-2 border-gray-300 dark:border-gray-700 text-gray-800 dark:text-gray-200">Concepts</h2>
-          <nav>
-            <ul class="space-y-2">
-              <!-- Concept list populated by JS -->
-            </ul>
-          </nav>
-        </aside>
-        <section id="concept-details" class="md:col-span-4 bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-          <h2 id="concept-title" class="text-2xl font-semibold mb-4 text-gray-800 dark:text-gray-200">Select a concept</h2>
-          <div id="concept-description" class="prose dark:prose-invert max-w-none text-gray-700 dark:text-gray-300 mb-6">
-            <p>Choose a concept from the list to learn more.</p>
-          </div>
-          <div id="interactive-area" class="bg-gray-50 dark:bg-gray-700 p-4 rounded-md border border-gray-200 dark:border-gray-600 min-h-[200px] prose dark:prose-invert max-w-none">
-            <!-- Interactive elements/visualizations go here -->
-            <p class="text-center text-gray-500 dark:text-gray-400 italic">Interactive area</p>
-          </div>
-        </section>
-      </main>
-      <div id="menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-20 hidden md:hidden"></div>
-    </div>
-    <script type="module" src="/main.js"></script>
-  </body>
+        <h2 class="text-xl font-semibold mb-4 border-b pb-2 border-gray-300 dark:border-gray-700 text-gray-800 dark:text-gray-200">Concepts</h2>
+        <nav>
+          <ul class="space-y-2">
+            <!-- Concept list populated by JS -->
+          </ul>
+        </nav>
+      </aside>
+      <section id="concept-details" class="md:col-span-4 bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+        <h2 id="concept-title" class="text-2xl font-semibold mb-4 text-gray-800 dark:text-gray-200">Select a concept</h2>
+        <div id="concept-description" class="prose dark:prose-invert max-w-none text-gray-700 dark:text-gray-300 mb-6">
+          <p>Choose a concept from the list to learn more.</p>
+        </div>
+        <div id="interactive-area" class="bg-gray-50 dark:bg-gray-700 p-4 rounded-md border border-gray-200 dark:border-gray-600 min-h-[200px] prose dark:prose-invert max-w-none">
+          <!-- Interactive elements/visualizations go here -->
+          <p class="text-center text-gray-500 dark:text-gray-400 italic">Interactive area</p>
+        </div>
+      </section>
+    </main>
+    <div id="menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-20 hidden md:hidden"></div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>

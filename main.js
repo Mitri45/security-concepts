@@ -1,7 +1,4 @@
-import mermaid from "mermaid"; // add Mermaid for diagrams
-// Import Chart for CSRF demo
-// Optional: Import OrbitControls for camera interaction if needed later
-// import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+import mermaid from "mermaid"; 
 
 const securityConcepts = [
 	{

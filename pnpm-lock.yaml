@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@tailwindcss/vite':
+        specifier: ^4.1.4
+        version: 4.1.4(vite@6.3.1(jiti@2.4.2)(lightningcss@1.29.2))
       chart.js:
         specifier: ^4.4.9
         version: 4.4.9
@@ -23,6 +26,9 @@ importers:
       react-dom:
         specifier: ^19.0.0
         version: 19.1.0(react@19.1.0)
+      tailwindcss:
+        specifier: ^4.1.4
+        version: 4.1.4
       three:
         specifier: ^0.175.0
         version: 0.175.0
@@ -33,9 +39,6 @@ importers:
       '@tailwindcss/typography':
         specifier: ^0.5.16
         version: 0.5.16(tailwindcss@4.1.4)
-      '@tailwindcss/vite':
-        specifier: ^4.1.4
-        version: 4.1.4(vite@6.3.1(jiti@2.4.2)(lightningcss@1.29.2))
       '@testing-library/dom':
         specifier: ^10.4.0
         version: 10.4.0
@@ -63,9 +66,6 @@ importers:
       jsdom:
         specifier: ^26.1.0
         version: 26.1.0
-      tailwindcss:
-        specifier: ^4.1.4
-        version: 4.1.4
       typescript:
         specifier: ~5.7.2
         version: 5.7.3
