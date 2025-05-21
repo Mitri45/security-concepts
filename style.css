@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 /* Basic Reset & Font */
 :root {
 	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -14,9 +15,9 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-/* @media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: light) {
 	:root {
 		color: #213547;
 		background-color: #ffffff;
 	}
-} */
+}
