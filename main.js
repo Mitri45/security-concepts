@@ -667,7 +667,7 @@ function setupXssDemo() {
 			<p class="text-sm mb-6">Cross-Site Scripting (XSS) lets attackers inject scripts into webpages. Modify the default payload below or enter your own code, then click <strong>Render</strong> to compare unsafe execution vs sanitized output.</p>
 			
 			<div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
-				<div class="bg-gray-50 dark:bg-gray-750 p-4 rounded-lg border border-gray-200 dark:border-gray-700">
+				<div class="bg-gray-50 dark:bg-sky-800 p-4 rounded-lg border border-gray-200 dark:border-gray-700">
 					<h4 class="text-lg font-semibold mb-3 text-gray-800 dark:text-gray-200">How XSS Is Performed:</h4>
 					<ul class="space-y-2 list-disc pl-5">
 						<li>Injecting unsanitized user input into HTML content or attributes (e.g., via forms, URLs, comments)</li>
@@ -676,7 +676,7 @@ function setupXssDemo() {
 					</ul>
 				</div>
 				
-				<div class="bg-gray-50 dark:bg-gray-750 p-4 rounded-lg border border-gray-200 dark:border-gray-700">
+				<div class="bg-gray-50 dark:bg-sky-800 p-4 rounded-lg border border-gray-200 dark:border-gray-700">
 					<h4 class="text-lg font-semibold mb-3 text-gray-800 dark:text-gray-200">What Attackers Can Do:</h4>
 					<ul class="space-y-2 list-disc pl-5">
 						<li>Steal session cookies or authentication tokens (<code class="bg-gray-200 dark:bg-gray-600 px-1 rounded">document.cookie</code>)</li>
