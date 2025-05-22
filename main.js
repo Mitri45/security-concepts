@@ -111,7 +111,7 @@ const securityConcepts = [
 		interactiveHTML: `
 			<div class="prose dark:prose-invert max-w-none space-y-6">
 				<h4>Open Redirect Flow</h4>
-				<pre class="mermaid bg-gray-100 dark:bg-gray-700 p-2 rounded">
+				<pre class="mermaid bg-gray-100 p-2 rounded">
 flowchart LR
 	A[User clicks link on trusted.com] --> B[trusted.com/redirect?url=target]
 	B --> C[Server redirects to target URL]
@@ -138,7 +138,7 @@ flowchart LR
 		interactiveHTML: `
 			<div class="prose dark:prose-invert max-w-none space-y-6">
 				<h4>Session Hijacking Flow</h4>
-				<pre class="mermaid bg-gray-100 dark:bg-gray-700 p-2 rounded">
+				<pre class="mermaid bg-gray-100 p-2 rounded">
 flowchart LR
 	A[User logs in] --> B[Server sets session cookie]
 	B --> C[Attacker steals cookie via XSS/sniffing]
@@ -372,7 +372,7 @@ Strict-Transport-Security: max-age=31536000; includeSubDomains
 				<p>The browser's <strong>Same-Origin Policy</strong> blocks cross-origin requests by default to protect users. CORS allows servers to specify when such requests are safe.</p>
 
 				<h4 class="mt-8">CORS Request Flow</h4>
-				<pre class="mermaid bg-gray-100 dark:bg-gray-700 p-2 rounded">
+				<pre class="mermaid bg-gray-100 p-2 rounded">
  sequenceDiagram
 	 Browser->>Server: Preflight OPTIONS (Origin, Access-Control-Request-Method, Access-Control-Request-Headers)
 	 Server-->>Browser: 200 OK (Access-Control-Allow-Origin, Access-Control-Allow-Methods, Access-Control-Allow-Headers, [Access-Control-Allow-Credentials])
@@ -738,7 +738,7 @@ function setupCsrfDemo() {
 			<h3 class="text-xl font-bold mb-4 text-blue-700 dark:text-blue-400 border-b border-gray-200 dark:border-gray-700 pb-2">CSRF Interactive Demo</h3>
 			
 			<div class="flex flex-col lg:flex-row gap-8 mb-6">
-				<div class="flex-1 border border-gray-300 dark:border-gray-600 rounded-md p-5 bg-gray-50 dark:bg-gray-750 shadow flex flex-col">
+				<div class="flex-1 border border-gray-300 dark:border-gray-600 rounded-md p-5 bg-gray-50 dark:bg-sky-800 shadow flex flex-col">
 					<div class="flex-grow">
 						<h4 class="text-lg font-semibold mb-3 text-gray-800 dark:text-gray-200 flex items-center">
 							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
@@ -791,7 +791,7 @@ function setupCsrfDemo() {
 				</div>
 			</div>
 			
-			<div class="bg-gray-50 dark:bg-gray-750 p-5 rounded-lg border border-gray-200 dark:border-gray-700 mb-6">
+			<div class="bg-gray-50 dark:bg-sky-800 p-5 rounded-lg border border-gray-200 dark:border-sky-800 mb-6">
 				<h4 class="text-lg font-semibold mb-3 text-gray-800 dark:text-gray-200">Server Response:</h4>
 				<pre id="csrf-server-log" class="bg-gray-100 dark:bg-gray-700 p-4 rounded-md min-h-[80px] text-sm font-mono whitespace-pre-wrap border border-gray-300 dark:border-gray-600"></pre>
 			</div>
@@ -855,7 +855,7 @@ function setupSqlInjectionDemo() {
 			<h3 class="text-xl font-bold mb-4 text-blue-700 dark:text-blue-400 border-b border-gray-200 dark:border-gray-700 pb-2">SQL Injection Demo</h3>
 			
 			<div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
-				<div class="bg-gray-50 dark:bg-gray-750 p-5 rounded-lg border border-gray-200 dark:border-gray-700">
+				<div class="bg-gray-50 dark:bg-sky-800 p-5 rounded-lg border border-gray-200 dark:border-gray-700">
 					<h4 class="text-lg font-semibold mb-3 text-gray-800 dark:text-gray-200">How SQL Injection Works:</h4>
 					<ul class="space-y-2 list-disc pl-5 mb-4">
 						<li>An attacker injects SQL syntax by including special characters like <code class="bg-gray-200 dark:bg-gray-600 px-1 rounded">'</code>.</li>
